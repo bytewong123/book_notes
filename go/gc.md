@@ -236,3 +236,7 @@ incremental-collector
 concurrent-collector
 
 虽然并发收集器能够与用户程序一起运行，但是并不是所有阶段都可以与用户程序一起运行，部分阶段还是需要暂停用户程序的，不过与传统的算法相比，并发的垃圾收集可以将能够并发执行的工作尽量并发执行；当然，因为读写屏障的引入，并发的垃圾收集器也一定会带来额外开销，不仅会增加垃圾收集的总时间，还会影响用户程序，这是我们在设计垃圾收集策略时必须要注意的。
+
+# 参考文章
+https://zhuanlan.zhihu.com/p/297177002
+https://draveness.me/golang/docs/part3-runtime/ch07-memory/golang-garbage-collector/#%E5%B9%B6%E5%8F%91%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86
